@@ -9,6 +9,10 @@ public class SetupMenu : MonoBehaviour
 
     private void Start()
     {
+        Setup();
+    }
+    public void Setup()
+    {
 
 
         foreach (var menu in _ids)
