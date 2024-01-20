@@ -9,16 +9,17 @@ public class SetupMenu : MonoBehaviour
 
     private void Start()
     {
-
-
+        Setup();
+    }
+    public void Setup()
+    {
         foreach (var menu in _ids)
         {
             menu.gameObject.SetActive(false);
-            if(menu.ID == _index.Index)
+            if (menu.ID == _index.Index)
             {
                 menu.gameObject.SetActive(true);
             }
         }
     }
-
 }
